@@ -106,7 +106,7 @@ def get_vectorstore():
 @st.cache_resource
 def get_llm():
     return ChatGroq(
-        model="llama3-70b-8192",  # Best quality
+        model="llama-3.1-8b-instant",  # Best quality
         temperature=0
     )
 
