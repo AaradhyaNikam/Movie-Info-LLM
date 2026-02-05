@@ -87,7 +87,7 @@ def get_vectorstore():
 def get_llm():
     """Initializes the Google Gemini Brain for chatting."""
     # We only use Google for the Answer, not the Embeddings.
-    return ChatGoogleGenerativeAI(model="gemini-1.0-pro", temperature=0)
+    return ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
 
 # --- MAIN APP ---
 st.title("🎬 Movie Expert (Hybrid)")
